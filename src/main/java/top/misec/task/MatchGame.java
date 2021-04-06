@@ -98,7 +98,7 @@ public class MatchGame implements Task {
     private void taskSuspend() throws InterruptedException {
         Random random = new Random();
         int sleepTime=random.nextInt(2500000) + 1000;
-        log.info("-----随机暂停{}ms-----\n", sleepTime / 60000);
+        log.info("-----随机暂停{}min-----\n", sleepTime / 60000);
         Thread.sleep(sleepTime);
     }
     private JsonObject queryContestQuestion(String today,int pn,int ps){
