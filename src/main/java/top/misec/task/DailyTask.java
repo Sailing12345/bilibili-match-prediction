@@ -50,7 +50,7 @@ public class DailyTask {
 
     private void taskSuspend() throws InterruptedException {
         Random random = new Random();
-        int sleepTime=random.nextInt(2500000) + 1000;
+        int sleepTime = (int) ((random.nextDouble() + 0.5) * 3000);
         //default 3000
         log.info("-----随机暂停{}min-----\n", sleepTime / 60000);
         Thread.sleep(sleepTime);
