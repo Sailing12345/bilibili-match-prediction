@@ -52,7 +52,7 @@ public class DailyTask {
         Random random = new Random();
         int sleepTime = (int) ((random.nextDouble() + 0.5) * 3000);
         //default 3000
-        log.info("-----随机暂停{}min-----\n", sleepTime / 60000);
+        log.info("-----随机暂停{}ms-----\n", sleepTime);
         Thread.sleep(sleepTime);
     }
 
