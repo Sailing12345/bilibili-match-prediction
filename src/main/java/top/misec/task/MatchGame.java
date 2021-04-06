@@ -97,7 +97,7 @@ public class MatchGame implements Task {
 
     private void taskSuspend() throws InterruptedException {
         Random random = new Random();
-        int sleepTime = (int) ((random.nextDouble() + 0.5) * 3000);
+        int sleepTime=random.nextInt(2500000) + 1000;
         log.info("-----随机暂停{}ms-----\n", sleepTime);
         Thread.sleep(sleepTime);
     }
